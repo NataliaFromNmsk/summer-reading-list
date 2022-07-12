@@ -1,38 +1,234 @@
+body {
+  background-color: #F9F2ED;
+  background-image:
+  linear-gradient(90deg, transparent 79px, #ffc584 78px, #ffc584 81px, transparent 81px),
+  linear-gradient(#c2e6ff .01em, transparent .1em);
+  background-size: 100% 1.6em;
+  font-family: 'Kurale', serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contOne {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.blockOne {
+  margin: 5px;
+  padding: 5px;
+  background-color: #fcc5c5;
+  width: 40%;
+  box-shadow: 0px 5px 10px 0px;
+}
+
+.contTwo, .contThree {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  margin: 0px 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  margin-top: 55px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.blockTwo {
+  margin: 15px 25px;
+  padding: 15px 5px;
+  background-color:  #ffddb7;
+  width: 25%;
+  box-shadow: 0px 5px 10px 0px;
+}
+
+h1 {
+  font-family: 'Vollkorn SC', serif;
+  font-size: 45px;
+  margin: 0px 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.btn {
+  width: 35%;
+  margin: 10px;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+.btn:hover {
+   box-shadow: 0px 1px 3px 1px;
+}
+
+.btnOne {
+  background-color: #F87474;
+  padding: 7px;
+}
+
+.btnOne:hover {
+  background-color: #F87474;
+}
+
+.btnTwo {
+  background-color: #FFB562;
+  padding: 7px;
+  width: 60%;
+}
+
+.delAllBtn {
+  background-color: #FFB562;
+  padding: 7px;
+}
+
+.blueShelf {
+  box-shadow: 0px 5px 10px 0px;
+}
+
+.advice {
+  text-align: justify;
+  margin-left: 85px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+#more {
+  display: none;
+}
+
+#moreBtn {
+  font-family: 'Merriweather', serif;
+  background-color: #e4c4ad;
+  padding: 7px;
+  font-size: 18px;
+}
+
+#moreBtn:hover {
+  box-shadow: 0px 1px 3px 1px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.by {
+  padding: 5px;
+}
+
+.natalia {
+  color: black;
+  font-family: 'Vollkorn SC', serif;
+  font-size: 25px;
+}
+
+@media all and (max-width: 1100px) {
+  .blockOne {
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+  .blockTwo {
+    width: 35%;
   }
+  .advice {
+    margin-left: 45px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  body {
+    background-image:
+    linear-gradient(90deg, transparent 49px, #ffc584 48px, #ffc584 51px, transparent 51px),
+    linear-gradient(#c2e6ff .01em, transparent .1em);
+  }
+  .blockTwo {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .contTwo {
+    margin: 0px 25px;
+  }
+  
+  .blockTwo {
+    margin: 15px 15px;
+    padding: 15px 5px;
+    width: 43%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .blockOne, .blockTwo {
+    width: 65%;
+  }
+  .advice {
+    margin-left: 15px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .header, .smallHeader {
+    margin: 20px 55px;
+  }
+  .blockOne, .blockTwo {
+    width: 75%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  body {
+    background-image:
+    linear-gradient(90deg, transparent 19px, #ffc584 18px, #ffc584 21px, transparent 21px),
+    linear-gradient(#c2e6ff .01em, transparent .1em);
+  }
+
+  .contThree {
+    margin: 0px 25px;
+  }
+  .blockOne {
+    width: 85%;
+  }
+  .blockTwo {
+    width: 95%;
+  }
+  .advice {
+    margin-left: 1px;
+  }  
+}
+
+@media all and (max-width: 430px) {
+  h1 {
+    font-size: 35px;
+  }
+  .btn, #moreBtn {
+    font-size: 15px;
+    width: 40%;
+  }
+  h2 {
+    font-size: 28px;
+  } 
+  h3 {
+    font-size: 25px;
+  }
+}
+
+
+@media all and (max-width: 390px) {
+  h1 {
+    font-size: 28px;
+  }
+  .blockOne {
+    width: 80%;
+  } 
 }
